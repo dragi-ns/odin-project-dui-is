@@ -97,9 +97,33 @@ main .container {
   cursor: pointer;
 }
 
+.image-slider-navigation button {
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0.5rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.image-slider-navigation button:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.image-slider-navigation button.active {
+  background-color: black;
+}
+
 .primary-footer {
   text-align: center;
   padding: 1rem 0;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
 }
