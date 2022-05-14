@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image slider | Dynamic User Interface</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+    />
+    <script type="module" defer>
+      import initImageSlider from './imageSlider.js';
+      initImageSlider();
+    </script>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="brand">IMAGE<span>SLIDER</span>?</div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="image-slider">
+          <div class="image-slides">
+            <div class="image-slide">
+              <img src="./images/one.jpg" alt="" />
+            </div>
+            <div class="image-slide">
+              <img src="./images/two.jpg" alt="" />
+            </div>
+            <div class="image-slide">
+              <img src="./images/three.jpg" alt="" />
+            </div>
+            <div class="image-slide">
+              <img src="./images/four.jpg" alt="" />
+            </div>
+            <div class="image-slide">
+              <img src="./images/five.jpg" alt="" />
+            </div>
+          </div>
+          <div class="image-slider-controls">
+            <button class="image-slider-left">
+              <span class="mdi mdi-arrow-left-bold"></span>
+            </button>
+            <button class="image-slider-right">
+              <span class="mdi mdi-arrow-right-bold"></span>
+            </button>
+          </div>
+        </div>
+        <section class="content">
+          <h2>BLA BLA</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            officiis amet vitae natus, vel pariatur ut voluptatibus dolor unde
+            tempore, illo, explicabo ipsum voluptates. Dignissimos sit libero
+            atque doloribus quo.
+          </p>
+          <p>
+            Dolorem at id a ipsam quam incidunt fugit, cumque provident maiores
+            repellendus minima quidem veniam necessitatibus deleniti quibusdam
+            alias inventore iste! Dolores, dignissimos illo nostrum saepe rem
+            sapiente facilis vero!
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="primary-footer">
+      <div class="container">
+        &copy; 2022
+        <a href="https://github.com/dragi-ns/odin-project-dui-is">dragi-ns</a>
+      </div>
+    </footer>
+  </body>
+</html>
