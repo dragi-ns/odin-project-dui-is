@@ -100,7 +100,7 @@ function initImageSlider() {
     navigationButton.addEventListener('click', () => {
       if (index < currentIndex) {
         previous({ previousIndex: index });
-      } else {
+      } else if (index > currentIndex) {
         next({ nextIndex: index });
       }
     });
